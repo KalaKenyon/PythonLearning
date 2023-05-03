@@ -30,5 +30,8 @@ elif random_number == 12:
   answer = "Stop looking at me like that..."
 else:
   answer = "Try again!"
-print(name, "asks: ", question)
+if name == "":
+  print("Question: ", question)
+else:
+  print(name, "asked the question: ", question)
 print("Magic 8-Ball's answer: ", answer)
